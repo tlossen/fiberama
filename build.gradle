@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+version '0.1'
+mainClassName = 'tlossen.Demo'
+
+
+repositories {
+    mavenCentral()
+}
+
+//configurations {
+//    quasar
+//}
+
+dependencies {
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+
+//    compile  "co.paralleluniverse:quasar-core:0.7.5:jdk8"
+//    compile "co.paralleluniverse:comsat-httpclient:0.7.0"
+//    compile "co.paralleluniverse:comsat-okhttp:0.7.0"
+}
+
+//run {
+//    jvmArgs "-javaagent:${configurations.quasar.iterator().next()}"
+//}
